@@ -185,6 +185,7 @@ def main():
                 iter_results.append(
                     {
                         "id":incorrect_answers[i]['id'],
+                        "benign_size": len(qrels[incorrect_answers[i]['id']]),  # check how many benign texts provided
                         "question": question,
                         "injected_adv": injected_adv,
                         "input_prompt": query_prompt,
