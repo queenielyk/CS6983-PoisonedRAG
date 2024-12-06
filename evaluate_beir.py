@@ -23,7 +23,8 @@ parser = argparse.ArgumentParser(description='test')
 parser.add_argument('--model_code', type=str, default="contriever")
 parser.add_argument('--score_function', type=str, default='dot', choices=['dot', 'cos_sim'])
 parser.add_argument('--top_k', type=int, default=100)
-parser.add_argument('--dataset', type=str, default="nq", help='BEIR dataset to evaluate')
+# parser.add_argument('--dataset', type=str, default="nq", help='BEIR dataset to evaluate')
+parser.add_argument('--dataset', type=str, default="fiqa", help='BEIR dataset to evaluate') # evaluate dataset FIQA for part 2 open-ended question
 parser.add_argument('--split', type=str, default='test')
 
 parser.add_argument('--result_output', default="results/beir_results/debug.json", type=str)

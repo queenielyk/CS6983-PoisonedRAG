@@ -2,9 +2,10 @@ from beir import util
 import os
 
 # Download and save dataset
-datasets = ['nq', 
-            'msmarco', 
-            'hotpotqa']
+#datasets = ['nq', 
+#            'msmarco', 
+#            'hotpotqa']
+datasets = ['fiqa']
 for dataset in datasets:
     url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
     out_dir = os.path.join(os.getcwd(), "datasets")
